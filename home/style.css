@@ -27,6 +27,14 @@ h1 {
     font-family: var(--fonte-principal);
 }
 
-h2 {
+p, h2, h3, h4, button, .social-text, .footer-left-texts {
     font-family: var(--fonte-secundaria);
+}
+
+.central-section a {
+    text-decoration: none;
+}
+
+.main-servicos {
+    background-color: var(--cor-secundaria);
 }

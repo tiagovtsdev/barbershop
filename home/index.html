@@ -35,36 +35,77 @@
          </div>
         <!-- section central (seções do menu) -->
         <div class="central-section">
-            <button class="info-button">
-                <a href="#" aria-label="Sobre"><i class="bi bi-scissors">SOBRE</i></a>
-            </button>
-            <button class="info-button">
-                <a href="#" aria-label="Profissionais"><i class="bi bi-person">PROFISSIONAIS</i></a>
-            </button>
-            <button class="info-button">
-                <a href="#" aria-label="Servicos"><i class="bi bi-emoji-sunglasses">SERVIÇOS</i></a>
-            </button>
-            <button class="info-button">
-                <a href="#" aria-label="Produtos"><i class="bi bi-basket3">PRODUTOS</i></a>
-            </button>
-            <button class="info-button">
-                <a href="#" aria-label="Contato"><i class="bi bi-info-lg">CONTATE-NOS</i></a>
-            </button>
+            <button><a href="#" aria-label="Profissionais" class="bi bi-person">PROFISSIONAIS</a></button>
+            <hr class="divisoria-central-section">
+            <button><a href="#" aria-label="Servicos" class="bi bi-scissors">SERVIÇOS</a></button>
+            <hr class="divisoria-central-section">
+            <button><a href="#" aria-label="Produtos" class="bi bi-basket3">PRODUTOS</a></button>
+            <hr class="divsoria-central-section">
+            <button><a href="#" aria-label="Contato" class="bi bi-info-lg">CONTATE-NOS</a></button>
         </div>
         <!-- menu superior direito -->
         <nav class="menu">
-            <a href="#" aria-label="Carrinho"><i class="bi bi-cart" alt="Carrinho"></i></a></a>
-            <a href="#" aria-label="Configurações"><i class="bi bi-gear" alt="Configurações"></i></a></a>
-            <a href="#" aria-label="Menu"><i class="bi bi-list" alt="Menu"></i></a></a> <!-- menu dropdown (coluna)-->
+            <a href="#" aria-label="Carrinho" class="bi bi-cart" alt="Carrinho"></a>
+            <a href="#" aria-label="Configurações" class="bi bi-gear" alt="Configurações"></a>
+            <a href="#" aria-label="Menu" class="bi bi-list" alt="Menu"></a> <!-- menu dropdown (coluna)-->
         </nav>
+        <hr class="divsoria-header">
     </header>
     <!-- conteúdo principal -->
     <main>
+        <!-- section 1 (menu principal|home) -->
         <h1>O melhor corte visual da cidade.</h1>
-        <h2>Você em sua melhor visão!</h2>
+        <p>Você em sua melhor visão!</p>
         <button class="agendar">Agendar Corte</button>
-        <button class="servicos">Nossos serviços</button>
-        <img src="../assets/bassets.jpeg" alt="Ambiente da barbearia" width="400">
+        <button class="produto">Ver Produtos</button>
+        <img src="../assets/bassets19.jpg" alt="Ambiente da barbearia" width="400">
+        <!-- section 2 (serviços de corte) -->
+        <div class="main-servicos">
+            <p>SERVIÇOS</p>
+            <h1>Nossos serviços de cortes visuais</h1>
+            <!-- corte pezinho -->
+            <div class="corte-pezinho">
+                <div class="corte-imagem">
+                <img src="../assets/corte1.jpeg" alt="Corte Pézinho" width="380"></div>
+                <p class="corte-ia">* Imagem gerada por IA.</p>
+                <h1 class="corte-nome">Pézinho</h1>
+                <hr class="divsoria-corte">
+                <h3 class="corte-custo">Custo R$</h3>
+                <h3 class="corte-preco">20,00</h3>
+                <hr class="divsoria-corte">
+                <h3 class="corte-prazo">Prazo para corte</h3>
+                <h3 class="corte-tempo">10 min</h3>
+                <button class="adicionar-carrinho">ADICIONAR</button>
+            </div>
+            <!-- corte barba -->
+            <div class="corte-barba">
+                <div class="corte-imagem">
+                <img src="../assets/corte2.jpeg" alt="Corte Pézinho" width="380"></div>
+                <p class="corte-ia">* Imagem gerada por IA.</p>
+                <h1 class="corte-nome">Barba</h1>
+                <hr class="divsoria-corte">
+                <h3 class="corte-custo">Custo R$</h3>
+                <h3 class="corte-preco">45,00</h3>
+                <hr class="divsoria-corte">
+                <h3 class="corte-prazo">Prazo para corte</h3>
+                <h3 class="corte-tempo">40 min</h3>
+                <button class="adicionar-carrinho">ADICIONAR</button>
+            </div>
+            <!-- corte social -->
+            <div class="corte-pezinho">
+                <div class="corte-imagem">
+                <img src="../assets/corte3.jpeg" alt="Corte Pézinho" width="380"></div>
+                <p class="corte-ia">* Imagem gerada por IA.</p>
+                <h1 class="corte-nome">Social</h1>
+                <hr class="divsoria-corte">
+                <h3 class="corte-custo">Custo R$</h3>
+                <h3 class="corte-preco">40,00</h3>
+                <hr class="divsoria-corte">
+                <h3 class="corte-prazo">Prazo para corte</h3>
+                <h3 class="corte-tempo">40 min</h3>
+                <button class="adicionar-carrinho">ADICIONAR</button>
+            </div>
+        </div>
     </main>
     <!-- rodapé da página -->
     <footer class="copyright">
@@ -77,8 +118,8 @@
         <!-- footer (links das redes sociais) -->
         <div class="footer-right">
             <div class="social-icons">
-                <a href="#" aria-label="Whatsapp"><i class="bi bi-whatsapp"></i></a>
-                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" aria-label="Whatsapp" class="bi bi-whatsapp"></a>
+                <a href="#" aria-label="Instagram" class="bi bi-instagram"></a>
             </div>
             <div class="social-text">Nossas Redes Sociais oficiais.</div>
         </div>
