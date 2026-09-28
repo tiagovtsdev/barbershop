@@ -55,7 +55,7 @@ section{
 }
 
 #sec6{
-    background-color: #EBEDEE;
+    background-color: #F5F2EB;
 }
 
 #sec6 .headerSec6{
@@ -78,9 +78,8 @@ section{
 #sec6 .cardBarbeiro{
     display: flex;
     flex-direction: column; 
-    background-color: #141211;
-    color: white;
     padding-bottom: 20px;
+    border: 1.5px solid #D7DBDE;
     border-radius: 10px;
 }
 
@@ -90,11 +89,13 @@ section{
 }
 
 #sec6 .cargo{
-    color: #D4AF37;
+    color: #5C616C;
 }
 
 #sec6 .info{
     margin: 20px 20px;
+    border-bottom: 2px solid #D7DBDE;
+    padding-bottom: 15px;
 }
 
 #sec6 .infoLinha{
@@ -103,9 +104,4 @@ section{
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 5px;
-}
-
-
-#sec6 .detalhe{
-    color: #A39E93;
 }
