@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- configuração padrão do HTML -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Bigod's</title>
+    <!-- logo na aba do navegador (favicon) -->
+    <link rel="icon" sizes="16x16" href="../assets/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" href="../assets/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="../assets/android-chrome-192x192.png">
+    <link rel="icon" sizes="512x512" href="../assets/android-chrome-512x512.png">
+    <!-- importação de fontes (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <!-- importação dos ícones (bootstrap) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- link redirecionado para o CSS externo -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- cabeçalho principal do header -->
+    <header class="cabecalho">
+        <div class="barbearialogo">
+            <a href="../home/index.html">
+                <img src="../assets/blogo2.png" alt="Logo da barbearia" width="80">
+            </a>
+        </div>
+        <!-- titulo e subtitulo do header -->
+         <div class="titulos-header">
+            <h1>Barbearia Bigod's</h1>
+            <h2 class="subtitulo-header">Barbearia & Conveniência</h2>
+         </div>
+        <!-- section central (seções do menu) -->
+        <div class="central-section">
+            <button class="info-button">
+                <a href="#" aria-label="Sobre"><i class="bi bi-scissors">SOBRE</i></a>
+            </button>
+            <button class="info-button">
+                <a href="#" aria-label="Profissionais"><i class="bi bi-person">PROFISSIONAIS</i></a>
+            </button>
+            <button class="info-button">
+                <a href="#" aria-label="Servicos"><i class="bi bi-emoji-sunglasses">SERVIÇOS</i></a>
+            </button>
+            <button class="info-button">
+                <a href="#" aria-label="Produtos"><i class="bi bi-basket3">PRODUTOS</i></a>
+            </button>
+            <button class="info-button">
+                <a href="#" aria-label="Contato"><i class="bi bi-info-lg">CONTATE-NOS</i></a>
+            </button>
+        </div>
+        <!-- menu superior direito -->
+        <nav class="menu">
+            <a href="#" aria-label="Carrinho"><i class="bi bi-cart" alt="Carrinho"></i></a></a>
+            <a href="#" aria-label="Configurações"><i class="bi bi-gear" alt="Configurações"></i></a></a>
+            <a href="#" aria-label="Menu"><i class="bi bi-list" alt="Menu"></i></a></a> <!-- menu dropdown (coluna)-->
+        </nav>
+    </header>
+    <!-- conteúdo principal -->
+    <main>
+        <h1>O melhor corte visual da cidade.</h1>
+        <h2>Você em sua melhor visão!</h2>
+        <button class="agendar">Agendar Corte</button>
+        <button class="servicos">Nossos serviços</button>
+        <img src="../assets/bassets.jpeg" alt="Ambiente da barbearia" width="400">
+    </main>
+    <!-- rodapé da página -->
+    <footer class="copyright">
+        <!-- footer (fireitos autorais) -->
+        <div class="footer-left">
+            <div class="footer-left-texts">
+                <div>&copy; 2026 Barbearia Bigod's. Todos os Direitos Reservados.</div>
+            </div>
+        </div>
+        <!-- footer (links das redes sociais) -->
+        <div class="footer-right">
+            <div class="social-icons">
+                <a href="#" aria-label="Whatsapp"><i class="bi bi-whatsapp"></i></a>
+                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            </div>
+            <div class="social-text">Nossas Redes Sociais oficiais.</div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+/* variáveis de cores e fontes */
+:root {
+    --cor-primaria: #F4F5F6;
+    --cor-secundaria: #F5F2EB;
+    --fonte-principal: "Merriweather", sans-serif;
+    --fonte-secundaria: "Lato", sans-serif;
+    --cor-texto-primario: #0A0D14;
+    --cor-texto-secundario: #5C616C;
+}
+
+/* reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos do corpo do body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--cor-primaria);
+}
+
+h1 {
+    font-family: var(--fonte-principal);
+}
+
+h2 {
+    font-family: var(--fonte-secundaria);
+}
