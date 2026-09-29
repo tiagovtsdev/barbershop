@@ -23,12 +23,14 @@ body {
     background-color: var(--cor-primaria);
 }
 
-h1 {
+h1, .corte-ia, .corte-custo, .corte-preco, .corte-prazo, .corte-tempo {
     font-family: var(--fonte-principal);
+    color: var(--cor-texto-primario);
 }
 
 p, h2, h3, h4, button, .social-text, .footer-left-texts {
     font-family: var(--fonte-secundaria);
+    color: var(--cor-texto-secundario);
 }
 
 .central-section a {
@@ -37,4 +39,17 @@ p, h2, h3, h4, button, .social-text, .footer-left-texts {
 
 .main-servicos {
     background-color: var(--cor-secundaria);
+}
+
+.adicionar-carrinho, .agendar {
+    background-color: var(--cor-texto-secundario);
+    color: white;
+}
+
+.subtitulo-header {
+    color: var(--cor-texto-secundario);
+}
+
+.titulo-header {
+    color: var(--cor-texto-secundario);
 }
