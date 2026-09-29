@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- configuração padrão do HTML -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Bigod's</title>
+    <!-- logo na aba do navegador (favicon) -->
+    <link rel="icon" sizes="16x16" href="../assets/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" href="../assets/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="../assets/android-chrome-192x192.png">
+    <link rel="icon" sizes="512x512" href="../assets/android-chrome-512x512.png">
+    <!-- importação de fontes (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <!-- importação dos ícones (bootstrap) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- link redirecionado para o CSS externo -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- cabeçalho principal do header -->
+    <header class="cabecalho">
+        <div class="barbearialogo">
+            <a href="../home/index.html">
+                <img src="../assets/blogo2.png" alt="Logo da barbearia" width="80">
+            </a>
+        </div>
+        <!-- titulo e subtitulo do header -->
+         <div class="titulos-header">
+            <h1 class="titulo-header">Barbearia Bigod's</h1>
+            <h2 class="subtitulo-header">Barbearia & Conveniência</h2>
+         </div>
+        <!-- section central (seções do menu) -->
+        <div class="central-section">
+            <button><a href="#" aria-label="Profissionais" class="bi bi-person">PROFISSIONAIS</a></button>
+            <hr class="divisoria-central-section">
+            <button><a href="#" aria-label="Servicos" class="bi bi-scissors">SERVIÇOS</a></button>
+            <hr class="divisoria-central-section">
+            <button><a href="#" aria-label="Produtos" class="bi bi-basket3">PRODUTOS</a></button>
+            <hr class="divsoria-central-section">
+            <button><a href="#" aria-label="Contato" class="bi bi-info-lg">CONTATE-NOS</a></button>
+        </div>
+        <!-- menu superior direito -->
+        <nav class="menu">
+            <a href="#" aria-label="Carrinho" class="bi bi-cart" alt="Carrinho"></a>
+            <a href="#" aria-label="Configurações" class="bi bi-gear" alt="Configurações"></a>
+            <a href="#" aria-label="Menu" class="bi bi-list" alt="Menu"></a> <!-- menu dropdown (coluna)-->
+        </nav>
+        <hr class="divsoria-header">
+    </header>
+    <!-- conteúdo principal -->
+    <main>
+        <!-- section 1 (menu principal|home) -->
+        <h1>O melhor corte visual da cidade.</h1>
+        <p>Você em sua melhor visão!</p>
+        <button class="agendar">Agendar Corte</button>
+        <button class="produto">Ver Produtos</button>
+        <img src="../assets/bassets19.jpg" alt="Ambiente da barbearia" width="400">
+        <!-- section 2 (serviços de corte) -->
+        <div class="main-servicos">
+            <p>SERVIÇOS</p>
+            <h1>Nossos serviços de cortes visuais</h1>
+            <!-- corte pezinho -->
+            <div class="corte-pezinho">
+                <div class="corte-imagem">
+                <img src="../assets/corte1.jpeg" alt="Corte Pézinho" width="380"></div>
+                <p class="corte-ia bi bi-exclamation-circle"> Imagem gerada por IA.</p>
+                <h1 class="corte-nome">Pézinho</h1>
+                <hr class="divsoria-corte">
+                <h3 class="corte-custo">Custo R$</h3>
+                <h3 class="corte-preco">20,00</h3>
+                <hr class="divsoria-corte">
+                <h3 class="corte-prazo">Prazo para corte</h3>
+                <h3 class="corte-tempo">10 min</h3>
+                <button class="adicionar-carrinho">ADICIONAR</button>
+            </div>
+            <!-- corte barba -->
+            <div class="corte-barba">
+                <div class="corte-imagem">
+                <img src="../assets/corte2.jpeg" alt="Corte Pézinho" width="380"></div>
+                <p class="corte-ia bi bi-exclamation-circle"> Imagem gerada por IA.</p>
+                <h1 class="corte-nome">Barba</h1>
+                <hr class="divsoria-corte">
+                <h3 class="corte-custo">Custo R$</h3>
+                <h3 class="corte-preco">45,00</h3>
+                <hr class="divsoria-corte">
+                <h3 class="corte-prazo">Prazo para corte</h3>
+                <h3 class="corte-tempo">40 min</h3>
+                <button class="adicionar-carrinho">ADICIONAR</button>
+            </div>
+            <!-- corte social -->
+            <div class="corte-pezinho">
+                <div class="corte-imagem">
+                <img src="../assets/corte3.jpeg" alt="Corte Pézinho" width="380"></div>
+                <p class="corte-ia bi bi-exclamation-circle"> Imagem gerada por IA.</p>
+                <h1 class="corte-nome">Social</h1>
+                <hr class="divsoria-corte">
+                <h3 class="corte-custo">Custo R$</h3>
+                <h3 class="corte-preco">40,00</h3>
+                <hr class="divsoria-corte">
+                <h3 class="corte-prazo">Prazo para corte</h3>
+                <h3 class="corte-tempo">40 min</h3>
+                <button class="adicionar-carrinho">ADICIONAR</button>
+            </div>
+        </div>
+    </main>
+    <!-- rodapé da página -->
+    <footer class="copyright">
+        <!-- footer (direitos autorais) -->
+        <div class="footer-left">
+            <div class="footer-left-texts">
+                <div>&copy; 2026 Barbearia Bigod's. Todos os Direitos Reservados.</div>
+            </div>
+        </div>
+        <!-- footer (links das redes sociais) -->
+        <div class="footer-right">
+            <div class="social-icons">
+                <a href="#" aria-label="Whatsapp" class="bi bi-whatsapp"></a>
+                <a href="#" aria-label="Instagram" class="bi bi-instagram"></a>
+            </div>
+            <div class="social-text">Nossas Redes Sociais oficiais.</div>
+        </div>
+    </footer>
+</body>
+</html>
