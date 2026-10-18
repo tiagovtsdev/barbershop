@@ -1,0 +1,129 @@
+/* seção 3 – "O legado do corte"
+   usa as fontes e cores definidas em style.css (:root), igual às outras seções */
+#sec3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    max-width: 1200px;
+    margin: 0; /* encostado à esquerda; para centralizar depois, troque por: margin: 0 auto; */
+    padding: 80px 24px;
+}
+
+#sec3 .sec3-label {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+}
+
+#sec3 .sec3-label span {
+    margin-right: 12px;
+}
+
+/* mesmo padrão do título da galeria: texto escuro + trecho em cinza leve */
+#sec3 .sec3-titulo {
+    margin-bottom: 24px;
+}
+
+#sec3 .sec3-titulo span {
+    display: block;
+    color: var(--cor-texto-secundario);
+    font-weight: 300;
+}
+
+#sec3 .sec3-texto > p:not(.sec3-label) {
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+#sec3 .sec3-numeros {
+    display: flex;
+    gap: 40px;
+    margin-top: 32px;
+}
+
+#sec3 .sec3-numero {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#sec3 .sec3-numero strong {
+    font-family: var(--fonte-principal);
+    font-size: 24px;
+    color: var(--cor-texto-primario);
+}
+
+#sec3 .sec3-numero span {
+    font-family: var(--fonte-secundaria);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--cor-texto-secundario);
+}
+
+/* duas caixas para as fotos (ainda vazias) */
+#sec3 .sec3-imagens {
+    display: flex;
+    gap: 16px;
+}
+
+#sec3 .sec3-foto {
+    flex: 1;
+    height: 420px;
+    border-radius: 8px;
+    background-color: #E4E6E9;
+    border: 1px dashed var(--cor-texto-secundario);
+    overflow: hidden;
+}
+
+/* quando a foto for adicionada, ela preenche a caixa */
+#sec3 .sec3-foto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* celular e telas estreitas: imagem embaixo do texto */
+@media (max-width: 800px) {
+    #sec3 {
+        grid-template-columns: 1fr;
+        padding: 48px 20px;
+    }
+
+    #sec3 .sec3-foto {
+        height: 240px;
+    }
+}
+
+/* seção "Nossos trabalhos" */
+#work-section {
+    max-width: 1200px;
+    padding: 80px 24px;
+}
+
+/* as duas colunas lado a lado: 3 itens de cada lado */
+#work-section .price-list {
+    display: flex;
+    gap: 48px;
+    margin-top: 40px;
+}
+
+#work-section .price-col-1,
+#work-section .price-col-2 {
+    flex: 1;
+}
+
+/* nome do serviço à esquerda e preço à direita */
+#work-section .top-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+/* celular: volta a empilhar */
+@media (max-width: 800px) {
+    #work-section .price-list {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
