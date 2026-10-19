@@ -53,3 +53,136 @@ p, h2, h3, h4, button, .social-text, .footer-left-texts {
 .titulo-header {
     color: var(--cor-texto-secundario);
 }
+
+
+#sec8 {
+    background-color: #0f0f0f; 
+    color: #ffffff;
+    padding: 80px 5%;
+    display: flex;
+    gap: 60px;
+    font-family: 'Lato', sans-serif;
+}
+
+.intro-panel {
+    flex: 1;
+    max-width: 400px;
+}
+
+.section-label p {
+    color: #c9a647;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.intro-panel h1 {
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+
+.texto-destaque {
+    color: #c9a647;
+}
+
+.intro-panel > p {
+    color: #f0ebeb;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.agendamento {
+    background-color: #c9a647;
+    border: none;
+    padding: 15px 30px;
+    font-weight: 900;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.agendamento:hover {
+    background-color: #e7b018;
+}
+
+.agendamento p {
+    color: white;
+    margin: 0;
+}
+
+.price-list {
+    flex: 2; 
+    display: flex;
+    gap: 40px;
+}
+
+.price-col-1, 
+.price-col-2 {
+    flex: 1;
+}
+
+.price-col-1 > h2, 
+.price-col-2 > h2 {
+    color: #c9a647;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.price-item {
+    margin-bottom: 25px;
+}
+
+.top-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.top-line h2 {
+    color: #fdfcfc;
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.top-line p {
+    margin: 0;
+}
+
+.top-line p strong {
+    color: #c9a647;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.price-item > p {
+    color: #575353;
+    font-size: 0.9rem;
+    margin: 0 0 15px 0;
+}
+
+.linha-divider {
+    border: none;
+    border-top: 1px solid #fffb0a38;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    #sec8, .price-list {
+        flex-direction: column;
+    }
+    .intro-panel {
+        max-width: 100%;
+    }
+}
