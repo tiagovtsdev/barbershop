@@ -1,11 +1,10 @@
-/* seção 3 – "O legado do corte"
-   usa as fontes e cores definidas em style.css (:root), igual às outras seções */
+
 #sec3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 48px;
     max-width: 1200px;
-    margin: 0; /* encostado à esquerda; para centralizar depois, troque por: margin: 0 auto; */
+    margin: 0; 
     padding: 80px 24px;
 }
 
@@ -19,7 +18,7 @@
     margin-right: 12px;
 }
 
-/* mesmo padrão do título da galeria: texto escuro + trecho em cinza leve */
+
 #sec3 .sec3-titulo {
     margin-bottom: 24px;
 }
@@ -60,7 +59,7 @@
     color: var(--cor-texto-secundario);
 }
 
-/* duas caixas para as fotos (ainda vazias) */
+
 #sec3 .sec3-imagens {
     display: flex;
     gap: 16px;
@@ -75,7 +74,7 @@
     overflow: hidden;
 }
 
-/* quando a foto for adicionada, ela preenche a caixa */
+
 #sec3 .sec3-foto img {
     display: block;
     width: 100%;
@@ -83,7 +82,7 @@
     object-fit: cover;
 }
 
-/* celular e telas estreitas: imagem embaixo do texto */
+
 @media (max-width: 800px) {
     #sec3 {
         grid-template-columns: 1fr;
@@ -95,13 +94,13 @@
     }
 }
 
-/* seção "Nossos trabalhos" */
+
 #work-section {
     max-width: 1200px;
     padding: 80px 24px;
 }
 
-/* as duas colunas lado a lado: 3 itens de cada lado */
+
 #work-section .price-list {
     display: flex;
     gap: 48px;
@@ -113,14 +112,14 @@
     flex: 1;
 }
 
-/* nome do serviço à esquerda e preço à direita */
+
 #work-section .top-line {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
-/* celular: volta a empilhar */
+
 @media (max-width: 800px) {
     #work-section .price-list {
         flex-direction: column;
