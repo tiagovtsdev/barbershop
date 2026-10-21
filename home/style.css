@@ -27,7 +27,7 @@
     box-sizing: border-box;
 }
 
-header {
+.headerzinho {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -36,11 +36,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: var(--cor-primaria);
 }
 
 /* tipografia */
-h1 {
+.h1-omelhor {
     font-family: var(--fonte-principal);
     color: var(--invertido-cor-texto-primario);
 }
@@ -49,7 +48,7 @@ h1 {
     color: var(--invertido-cor-texto-secundario);
 }
 
-p, button, a {
+.paragrafo1, button, a {
     font-family: var(--fonte-secundaria);
     color: var(--invertido-cor-texto-primario);
 }
