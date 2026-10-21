@@ -8,14 +8,12 @@
     --cor-texto-secundario: #5C616C;
 }
 
-/* reset global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* estilos do corpo do body */
 body {
     display: flex;
     flex-direction: column;
@@ -185,4 +183,116 @@ p, h2, h3, h4, button, .social-text, .footer-left-texts {
     .intro-panel {
         max-width: 100%;
     }
+}
+
+
+#footer {
+    background-color: #0d0d0d;
+    color: #a0a0a0;
+    padding: 60px 5% 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.85rem;
+}
+
+.main-footer {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.brand-collum { flex: 2; min-width: 250px; }
+.links-col-1, .links-col-2 { flex: 1; min-width: 130px; }
+.links-col-3 { flex: 2; min-width: 250px; }
+
+.brand-id h1 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 0 5px 0;
+}
+
+.brand-id p {
+    color: #c9a647;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.location p {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.location p:last-child {
+    color: #c9a647; 
+    margin-top: 15px;
+}
+
+.links-col-1 p strong, 
+.links-col-2 p strong, 
+.links-col-3 p strong {
+    color: #c9a647;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.links-col-1 p, 
+.links-col-2 p {
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.links-col-1 p:not(:first-child):hover, 
+.links-col-2 p:not(:first-child):hover {
+    color: #ffffff; 
+}
+
+.links-col-3 .input {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 10px 15px;
+    border-radius: 4px;
+    justify-content: space-between;
+}
+
+.links-col-3 .input input {
+    background: transparent;
+    border: none;
+}
+
+hr.linha-divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #2a2a2a; 
+    margin: 40px 0 20px;
+}
+
+.linha-final {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 20px;
+}
+
+.redes-sociais p {
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.redes-sociais p:hover {
+    color: #eeff00;
 }
