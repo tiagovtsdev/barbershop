@@ -409,3 +409,105 @@ p, h2, h3, h4, button, .social-text, .footer-left-texts {
         gap: 32px;
     }
 }
+
+/* variáveis de cores e fontes */
+:root {
+    /* cores dos textos */
+    --cor-texto-primario: #0a0d14;
+    --cor-texto-secundario: #5c616c;
+    --invertido-cor-texto-primario: #f5f2eb;
+    --invertido-cor-texto-secundario: #a39e93;
+    
+    /* cores de fundo */
+    --cor-primaria: #F4F5F6;
+    --cor-secundaria: #f5f2eb;
+    --invertido-cor-primaria: #0b0a09;
+    --invertido-cor-secundaria: #0A0D14;
+    
+    /* fonte dos textos */
+    --fonte-principal: "Merriweather", serif;
+    --fonte-secundaria: "Lato", sans-serif;
+
+    /* cores do layout */
+    --cor-botao: #5C616C;
+}
+
+/* reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headerzinho {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* estilos do corpo (body) */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* tipografia */
+.h1-omelhor {
+    font-family: var(--fonte-principal);
+    color: var(--invertido-cor-texto-primario);
+}
+
+.h1-cidade {
+    color: var(--invertido-cor-texto-secundario);
+}
+
+.paragrafo1, button, a {
+    font-family: var(--fonte-secundaria);
+    color: var(--invertido-cor-texto-primario);
+}
+
+/* header e links */
+.titulo-header {
+    color: var(--invertido-cor-texto-primario);
+}
+
+.central-section button {
+    text-decoration: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.central-section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* botões do main */
+.botao-agendar {
+    background-color: var(--cor-botao);
+    color: var(--invertido-cor-texto-primario);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.botao-servicos {
+    background-color: transparent;
+    border: 2px solid var(--cor-botao);
+    color: var(--invertido-cor-texto-primario);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+/* background de fundo com efeito parallax */
+.background-parallax {
+    background-image: url('../assets/bassets7.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
