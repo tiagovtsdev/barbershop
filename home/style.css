@@ -281,7 +281,6 @@ p, h2, h3, h4, button, .social-text, .footer-left-texts {
     margin-right: 20px;
     margin-bottom: 5px;
 }
-
 @media (max-width: 900px) {
 
     #sec5 {
@@ -325,4 +324,234 @@ p, h2, h3, h4, button, .social-text, .footer-left-texts {
     #sec6 .cardBarbeiro img {
         height: 280px;
     }
+}
+
+#sec3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    max-width: 1200px;
+    margin: 0; 
+    padding: 80px 24px;
+}
+
+#sec3 .sec3-label {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+}
+
+#sec3 .sec3-label span {
+    margin-right: 12px;
+}
+
+
+#sec3 .sec3-titulo {
+    margin-bottom: 24px;
+}
+
+#sec3 .sec3-titulo span {
+    display: block;
+    color: var(--cor-texto-secundario);
+    font-weight: 300;
+}
+
+#sec3 .sec3-texto > p:not(.sec3-label) {
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+#sec3 .sec3-numeros {
+    display: flex;
+    gap: 40px;
+    margin-top: 32px;
+}
+
+#sec3 .sec3-numero {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#sec3 .sec3-numero strong {
+    font-family: var(--fonte-principal);
+    font-size: 24px;
+    color: var(--cor-texto-primario);
+}
+
+#sec3 .sec3-numero span {
+    font-family: var(--fonte-secundaria);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--cor-texto-secundario);
+}
+
+
+#sec3 .sec3-imagens {
+    display: flex;
+    gap: 16px;
+}
+
+#sec3 .sec3-foto {
+    flex: 1;
+    height: 420px;
+    border-radius: 8px;
+    background-color: #E4E6E9;
+    border: 1px dashed var(--cor-texto-secundario);
+    overflow: hidden;
+}
+
+
+#sec3 .sec3-foto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width: 800px) {
+    #sec3 {
+        grid-template-columns: 1fr;
+        padding: 48px 20px;
+    }
+
+    #sec3 .sec3-foto {
+        height: 240px;
+    }
+}
+
+
+#work-section {
+    max-width: 1200px;
+    padding: 80px 24px;
+}
+
+
+#work-section .price-list {
+    display: flex;
+    gap: 48px;
+    margin-top: 40px;
+}
+
+#work-section .price-col-1,
+#work-section .price-col-2 {
+    flex: 1;
+}
+
+
+#work-section .top-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+@media (max-width: 800px) {
+    #work-section .price-list {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+/* variáveis de cores e fontes */
+:root {
+    /* cores dos textos */
+    --cor-texto-primario: #0a0d14;
+    --cor-texto-secundario: #5c616c;
+    --invertido-cor-texto-primario: #f5f2eb;
+    --invertido-cor-texto-secundario: #a39e93;
+    
+    /* cores de fundo */
+    --cor-primaria: #F4F5F6;
+    --cor-secundaria: #f5f2eb;
+    --invertido-cor-primaria: #0b0a09;
+    --invertido-cor-secundaria: #0A0D14;
+    
+    /* fonte dos textos */
+    --fonte-principal: "Merriweather", serif;
+    --fonte-secundaria: "Lato", sans-serif;
+
+    /* cores do layout */
+    --cor-botao: #5C616C;
+}
+
+/* reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headerzinho {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* estilos do corpo (body) */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* tipografia */
+.h1-omelhor {
+    font-family: var(--fonte-principal);
+    color: var(--invertido-cor-texto-primario);
+}
+
+.h1-cidade {
+    color: var(--invertido-cor-texto-secundario);
+}
+
+.paragrafo1, button, a {
+    font-family: var(--fonte-secundaria);
+    color: var(--invertido-cor-texto-primario);
+}
+
+/* header e links */
+.titulo-header {
+    color: var(--invertido-cor-texto-primario);
+}
+
+.central-section button {
+    text-decoration: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.central-section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* botões do main */
+.botao-agendar {
+    background-color: var(--cor-botao);
+    color: var(--invertido-cor-texto-primario);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.botao-servicos {
+    background-color: transparent;
+    border: 2px solid var(--cor-botao);
+    color: var(--invertido-cor-texto-primario);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+/* background de fundo com efeito parallax */
+.background-parallax {
+    background-image: url('../assets/bassets7.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
 }
