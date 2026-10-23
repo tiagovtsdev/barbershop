@@ -52,7 +52,6 @@ p, h2, h3, h4, button, .social-text, .footer-left-texts {
     color: var(--cor-texto-secundario);
 }
 
-
 #sec8 {
     background-color: #0f0f0f; 
     color: #ffffff;
@@ -664,4 +663,43 @@ body {
     min-height: 100vh; 
     display: flex;
     flex-direction: column;
+}
+
+.main-servicos{
+   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 30px;
+
+}
+
+.corte-nome{
+    font-family: var(--fonte-principal);        
+}
+ 
+
+.main-servicos > p, h1{
+    width: 100%;
+      font-family: var(--fonte-principal);
+    color: var(--cor-texto-primario);
+}
+
+.main-servicos > div{
+   display: flex;
+   flex-direction: column;
+}
+
+.main-servicos .corte-nome{
+    color:#5C616C;
+    font-size: 2.5rem;
+    
+}
+
+.main-servicos > p,
+.main-servicos > h1 {
+   font-family: "Cormorant Garamond", serif;
+    font-size: 2.5rem;
 }
