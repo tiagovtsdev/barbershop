@@ -20,6 +20,599 @@
     --cor-botao: #5C616C;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* tipografia */
+.h1-omelhor {
+    font-family: var(--fonte-principal);
+    color: var(--invertido-cor-texto-primario);
+}
+
+.h1-cidade {
+    color: var(--invertido-cor-texto-secundario);
+}
+
+.paragrafo1, button, a {
+    font-family: var(--fonte-secundaria);
+    color: var(--invertido-cor-texto-primario);
+}
+
+/* header e links */
+.titulo-header {
+    color: var(--invertido-cor-texto-primario);
+}
+
+.central-section button {
+    text-decoration: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.central-section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-servicos {
+    background-color: var(--cor-secundaria);
+}
+
+.adicionar-carrinho, .agendar {
+    background-color: var(--cor-texto-secundario);
+    color: white;
+}
+
+.subtitulo-header {
+    color: var(--cor-texto-secundario);
+}
+
+.titulo-header {
+    color: var(--cor-texto-secundario);
+}
+
+#sec8 {
+    background-color: #0f0f0f; 
+    color: #ffffff;
+    padding: 80px 5%;
+    display: flex;
+    gap: 60px;
+    font-family: 'Lato', sans-serif;
+}
+
+.intro-panel {
+    flex: 1;
+    max-width: 400px;
+}
+
+.section-label p {
+    color: #c9a647;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.intro-panel h1 {
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+
+.texto-destaque {
+    color: #c9a647;
+}
+
+.intro-panel > p {
+    color: #f0ebeb;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.agendamento {
+    background-color: #c9a647;
+    border: none;
+    padding: 15px 30px;
+    font-weight: 900;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.agendamento:hover {
+    background-color: #e7b018;
+}
+
+.agendamento p {
+    color: white;
+    margin: 0;
+}
+
+.price-list {
+    flex: 2; 
+    display: flex;
+    gap: 40px;
+}
+
+.price-col-1, 
+.price-col-2 {
+    flex: 1;
+}
+
+.price-col-1 > h2, 
+.price-col-2 > h2 {
+    color: #c9a647;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.price-item {
+    margin-bottom: 25px;
+}
+
+.top-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.top-line h2 {
+    color: #fdfcfc;
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.top-line p {
+    margin: 0;
+}
+
+.top-line p strong {
+    color: #c9a647;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.price-item > p {
+    color: #575353;
+    font-size: 0.9rem;
+    margin: 0 0 15px 0;
+}
+
+.linha-divider {
+    border: none;
+    border-top: 1px solid #fffb0a38;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    #sec8, .price-list {
+        flex-direction: column;
+    }
+    .intro-panel {
+        max-width: 100%;
+    }
+}
+
+
+#footer {
+    background-color: #0d0d0d;
+    color: #a0a0a0;
+    padding: 60px 5% 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.85rem;
+}
+
+.main-footer {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.brand-collum { flex: 2; min-width: 250px; }
+.links-col-1, .links-col-2 { flex: 1; min-width: 130px; }
+.links-col-3 { flex: 2; min-width: 250px; }
+
+.brand-id h1 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 0 5px 0;
+}
+
+.brand-id p {
+    color: #c9a647;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.location p {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.location p:last-child {
+    color: #c9a647; 
+    margin-top: 15px;
+}
+
+.links-col-1 p strong, 
+.links-col-2 p strong, 
+.links-col-3 p strong {
+    color: #c9a647;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.links-col-1 p, 
+.links-col-2 p {
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.links-col-1 p:not(:first-child):hover, 
+.links-col-2 p:not(:first-child):hover {
+    color: #ffffff; 
+}
+
+.links-col-3 .input {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 10px 15px;
+    border-radius: 4px;
+    justify-content: space-between;
+}
+
+.links-col-3 .input input {
+    background: transparent;
+    border: none;
+}
+
+hr.linha-divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #2a2a2a; 
+    margin: 40px 0 20px;
+}
+
+.linha-final {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 20px;
+}
+
+.redes-sociais p {
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.redes-sociais p:hover {
+    color: #eeff00;
+}
+
+#sec5 p{
+    margin-bottom: 40px;
+}
+.textAlinhado{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.textAlinhado p{
+    display: flex;
+}
+
+#sec5{
+    min-height: 100dvh;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+#sec5 .galeriaFoto{
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    margin-top: 40px; 
+}
+
+.titulo-galeria{
+    font-family: "Cormorant Garamond", serif;
+}
+
+.titulo-galeria > span {
+    color: #5C616C;
+    font-weight: 300;
+}
+
+.linha{      
+    display: flex;        
+    height: 100%;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#sec6{
+    background-color: #F5F2EB;
+}
+
+#sec6 .headerSec6{
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+#sec6 .headerSec6 p{
+    margin-bottom: 20px;
+}
+
+#sec6 .barbeiros{
+    display: flex;
+    justify-content: center;
+    gap: 40px;      
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#sec6 .cardBarbeiro{
+    display: flex;
+    flex-direction: column; 
+    padding-bottom: 20px;
+    border: 1.5px solid #D7DBDE;
+    border-radius: 10px;
+}
+
+#sec6 .cardBarbeiro img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#sec6 .cargo{
+    color: #5C616C;
+}
+
+#sec6 .info{
+    margin: 20px 20px;
+    border-bottom: 2px solid #D7DBDE;
+    padding-bottom: 15px;
+}
+
+#sec6 .infoLinha{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+@media (max-width: 900px) {
+
+    #sec5 {
+        padding: 20px 16px;
+        min-height: auto;
+    }
+
+    .textAlinhado {
+        flex-direction: column;
+    }
+
+    #sec5 .linha {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #sec5 .linha img {
+        width: 100%;
+        height: 220px;
+        flex: none;
+    }
+
+    #sec6 {
+        padding: 40px 16px;
+    }
+
+    #sec6 .headerSec6 h1 {
+        font-size: 1.6rem;
+    }
+
+    #sec6 .barbeiros {
+        padding: 0;
+        gap: 24px;
+    }
+
+    #sec6 .cardBarbeiro {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    #sec6 .cardBarbeiro img {
+        height: 280px;
+    }
+}
+
+#sec3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    max-width: 1200px;
+    margin: 0; 
+    padding: 80px 24px;
+}
+
+#sec3 .sec3-label {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+}
+
+#sec3 .sec3-label span {
+    margin-right: 12px;
+}
+
+
+#sec3 .sec3-titulo {
+    margin-bottom: 24px;
+}
+
+#sec3 .sec3-titulo span {
+    display: block;
+    color: var(--cor-texto-secundario);
+    font-weight: 300;
+}
+
+#sec3 .sec3-texto > p:not(.sec3-label) {
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+#sec3 .sec3-numeros {
+    display: flex;
+    gap: 40px;
+    margin-top: 32px;
+}
+
+#sec3 .sec3-numero {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#sec3 .sec3-numero strong {
+    font-family: var(--fonte-principal);
+    font-size: 24px;
+    color: var(--cor-texto-primario);
+}
+
+#sec3 .sec3-numero span {
+    font-family: var(--fonte-secundaria);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--cor-texto-secundario);
+}
+
+
+#sec3 .sec3-imagens {
+    display: flex;
+    gap: 16px;
+}
+
+#sec3 .sec3-foto {
+    flex: 1;
+    height: 420px;
+    border-radius: 8px;
+    background-color: #E4E6E9;
+    border: 1px dashed var(--cor-texto-secundario);
+    overflow: hidden;
+}
+
+
+#sec3 .sec3-foto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width: 800px) {
+    #sec3 {
+        grid-template-columns: 1fr;
+        padding: 48px 20px;
+    }
+
+    #sec3 .sec3-foto {
+        height: 240px;
+    }
+}
+
+
+#work-section {
+    max-width: 1200px;
+    padding: 80px 24px;
+}
+
+
+#work-section .price-list {
+    display: flex;
+    gap: 48px;
+    margin-top: 40px;
+}
+
+#work-section .price-col-1,
+#work-section .price-col-2 {
+    flex: 1;
+}
+
+
+#work-section .top-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+@media (max-width: 800px) {
+    #work-section .price-list {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+/* variáveis de cores e fontes */
+:root {
+    /* cores dos textos */
+    --cor-texto-primario: #0a0d14;
+    --cor-texto-secundario: #5c616c;
+    --invertido-cor-texto-primario: #f5f2eb;
+    --invertido-cor-texto-secundario: #a39e93;
+    
+    /* cores de fundo */
+    --cor-primaria: #F4F5F6;
+    --cor-secundaria: #f5f2eb;
+    --invertido-cor-primaria: #0b0a09;
+    --invertido-cor-secundaria: #0A0D14;
+    
+    /* fonte dos textos */
+    --fonte-principal: "Merriweather", serif;
+    --fonte-secundaria: "Lato", sans-serif;
+
+    /* cores do layout */
+    --cor-botao: #5C616C;
+}
+
 /* reset global */
 * {
     margin: 0;
@@ -98,4 +691,43 @@ body {
     min-height: 100vh; 
     display: flex;
     flex-direction: column;
+}
+
+.main-servicos{
+   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 30px;
+
+}
+
+.corte-nome{
+    font-family: var(--fonte-principal);        
+}
+ 
+
+.main-servicos > p, h1{
+    width: 100%;
+      font-family: var(--fonte-principal);
+    color: var(--cor-texto-primario);
+}
+
+.main-servicos > div{
+   display: flex;
+   flex-direction: column;
+}
+
+.main-servicos .corte-nome{
+    color:#5C616C;
+    font-size: 2.5rem;
+    
+}
+
+.main-servicos > p,
+.main-servicos > h1 {
+   font-family: "Cormorant Garamond", serif;
+    font-size: 2.5rem;
 }
