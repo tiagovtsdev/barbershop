@@ -739,7 +739,7 @@ body {
     flex-direction: column;
     gap: 12px;
     padding: 12px;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
     border: 1px solid #C9C4B8;
     border-radius: 8px;
 }
