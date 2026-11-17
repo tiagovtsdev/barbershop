@@ -5,86 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbearia Bigod's</title>
-
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" sizes="16x16" href="../assets/favicon-16x16.png">
     <link rel="icon" sizes="32x32" href="../assets/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
     <link rel="icon" sizes="192x192" href="../assets/android-chrome-192x192.png">
     <link rel="icon" sizes="512x512" href="../assets/android-chrome-512x512.png">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <section id="sec12">
-        <div class="background-parallax" id="topo">
-            <div class="hero-slides" aria-hidden="true">
-                <div class="hero-slide ativo"></div>
-                <div class="hero-slide"></div>
-                <div class="hero-slide"></div>
+    <div class="background-parallax">
+        <header class="headerzinho">
+            <div class="barbearialogo">
+                <a href="../home/index.html">
+                    <img src="../assets/blogo2.png" alt="Logo da barbearia" width="80">
+                </a>
             </div>
-
-            <header class="header">
-                <div class="header-marca">
-                    <a href="../home/index.html" class="header-logo">
-                        <img src="../assets/blogo2.png" alt="Logo da Barbearia Bigod's" width="80">
-                    </a>
-                    <p class="header-titulo">Barbearia Bigod's</p>
-                </div>
-
-                <nav class="header-nav" aria-label="Menu principal">
-                    <ul>
-                        <li><a href="#sec6">PROFISSIONAIS</a></li>
-                        <li><a href="#sec2">SERVIÇOS</a></li>
-                        <li><a href="#">PRODUTOS</a></li>
-                        <li><a href="#sec9">CONTATE-NOS</a></li>
-                    </ul>
-                </nav>
-
-                <div class="header-acoes">
-                    <a href="#" class="bi bi-cart" aria-label="Carrinho"></a>
-                    <a href="#" class="bi bi-gear" aria-label="Configurações"></a>
-                    <button type="button" class="header-menu-btn bi bi-list" aria-label="Menu" aria-expanded="false"
-                        aria-controls="menu-dropdown"></button>
-                </div>
-
-                <nav id="menu-dropdown" class="menu-dropdown" aria-label="Menu suspenso">
-                    <a href="#sec6">PROFISSIONAIS</a>
-                    <a href="#sec2">SERVIÇOS</a>
-                    <a href="#">PRODUTOS</a>
-                    <a href="#sec9">CONTATE-NOS</a>
-                </nav>
-            </header>
-
-            <section class="hero">
-                <div class="hero-bloco">
-                    <div class="hero-indicador">
-                        <button type="button" class="ativo" aria-label="Imagem 1"></button>
-                        <button type="button" aria-label="Imagem 2"></button>
-                        <button type="button" aria-label="Imagem 3"></button>
-                    </div>
-
-                    <div class="hero-conteudo">
-                        <h1 class="hero-titulo">O melhor corte<br>visual da<br><span>cidade</span></h1>
-                        <p class="hero-subtitulo">Você em sua melhor visão!</p>
-
-                        <div class="hero-botoes">
-                            <a href="#" class="botao-agendar">Agendar corte</a>
-                            <a href="#sec2" class="botao-servicos">Nossos serviços</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </section>
-
+            <!-- titulo e subtitulo do header -->
+            <div class="titulos-header">
+                <h1 class="titulo-header">Barbearia Bigod's</h1>
+            </div>
+            <!-- section central (seções do menu) -->
+            <div class="central-section">
+                <button><a href="#">PROFISSIONAIS</a></button>
+                <hr class="divisoria-central-section">
+                <button><a href="#">SERVIÇOS</a></button>
+                <hr class="divisoria-central-section">
+                <button><a href="#">PRODUTOS</a></button>
+                <hr class="divsoria-central-section">
+                <button><a href="#">CONTATE-NOS</a></button>
+            </div>
+            <!-- menu superior direito -->
+            <nav class="menu">
+                <a href="#" aria-label="Carrinho" class="bi bi-cart" alt="Carrinho"></a>
+                <a href="#" aria-label="Configurações" class="bi bi-gear" alt="Configurações"></a>
+                <a href="#" aria-label="Menu" class="bi bi-list" alt="Menu"></a> <!-- menu dropdown (coluna)-->
+            </nav>
+            <hr class="divsoria-header">
+        </header>
+        <!-- conteúdo principal -->
+        <main>
+            <!-- section 2 (menu principal|home) -->
+                <h1 class="h1-omelhor">O melhor corte visual da <span class="h1-cidade">cidade</class></h1>
+                <p class="paragrafo1">Você em sua melhor visão</p>
+                <button class="botao-agendar">Agendar Corte</button>
+                <button class="botao-servicos">Nossos Serviços</button>
+        </main>
+    </div>
     <section id="sec2">
 
         <div class="main-servicos">
@@ -137,7 +111,6 @@
             </div>
         </div>
     </section>
-
     <section id="sec3">
         <div class="sec3-texto">
             <p class="sec3-label"><span>02</span> O LEGADO DO CORTE</p>
@@ -168,33 +141,31 @@
             <div class="sec3-foto"></div>
         </div>
     </section>
-
     <section id="sec4"></section>
-
     <section id="sec5">
 
         <p>GALERIA</p>
 
         <div class="textAlinhado">
             <h1 class="titulo-galeria">Confira nossa Galeria de <span>Cortes & Ambiente</span></h1>
+
         </div>
 
-        <div class="galeriaFoto">
-
+        <div class="galeriaFoto"> 
+            
             <div class="linha">
                 <img src="../assets/assets19 1.png" alt="Corte" class="grande">
                 <img src="../assets/assets14 1.png" alt="Produtos" class="pequeno">
             </div>
 
-            <div class="linha">
-                <img src="../assets/assets10 1.png" alt="Equipamento" class="pequeno">
-                <img src="../assets/image 15.png" alt="Cliente" class="grande">
-            </div>
+                <div class="linha">
+                    <img src="../assets/assets10 1.png" alt="Equipamento" class="pequeno">
+                    <img src="../assets/image 15.png" alt="Cliente" class="grande">
+                </div>
 
         </div>
 
     </section>
-
     <section id="sec6">
         <div class="headerSec6">
             <p>OS ARTISTAS</p>
@@ -203,6 +174,7 @@
         </div>
 
         <div class="barbeiros">
+
 
             <div class="cardBarbeiro">
                 <img src="../assets/image 23.png" alt="Barbeiro 1">
@@ -237,9 +209,32 @@
         </div>
 
     </section>
-
-    <section id="sec7"></section>
-
+    <section id="sec7">
+        <p class="sec7-label">PRODUTOS</p>
+        <h1 class="sec7-titulo">Nossos <span>produtos</span></h1>
+        <div class="sec7-lista">
+            <div class="sec7-cards">
+            <article class="sec7-card">
+                <div class="sec7-foto"><img src="../assets/balsamo.jpg" alt="Bálsamo Scout"></div>
+                <h2>Bálsamo Scout</h2>
+                <div class="sec7-preco"><span>Custo R$</span><strong>70,00</strong></div>
+                <button class="adicionar-carrinho" type="button">ADICIONAR</button>
+            </article>
+            <article class="sec7-card">
+                <div class="sec7-foto"><img src="../assets/desodorantes.jpg" alt="Desodorante Rexona"></div>
+                <h2>Desodorante Rexona</h2>
+                <div class="sec7-preco"><span>Custo R$</span><strong>15,00</strong></div>
+                <button class="adicionar-carrinho" type="button">ADICIONAR</button>
+            </article>
+            <article class="sec7-card">
+                <div class="sec7-foto"><img src="../assets/shark.jpg" alt="Pomada Shark"></div>
+                <h2>Pomada Shark</h2>
+                <div class="sec7-preco"><span>Custo R$</span><strong>75,00</strong></div>
+                <button class="adicionar-carrinho" type="button">ADICIONAR</button>
+            </article>
+            </div>
+        </div>
+    </section>
     <section id="sec8">
         <section class="intro-panel">
             <div class="section-label">
@@ -309,113 +304,56 @@
             </section>
         </section>
     </section>
+    <section id="sec9"></section>
+    <footer id="footer">
+        <section class="footer-section">
+            <section class="main-footer">
+                <section class="brand-collum">
+                    <div class="brand-id">
+                        <h1>BARBEARIA BIGODS</h1>
+                        <p>TRADIÇÃO & ESTILO DESDE 2012</p>
+                    </div>
+                    <div class="location">
+                        <p>R.MATO GROSSO N.265 - PARQUE DOS ESTADOS , STI</p>
+                        <p>Santa Terezinha de Itaipu, PR, Brasil</p>
+                        <p>+55 (45) 99930-6611</p>
+                    </div>
+                </section>
 
-    <div class="fim-pagina">
-
-        <section id="sec9" class="localizacao">
-
-            <div class="localizacao-marca">
-                <img src="../assets/blogo2.png" alt="Logo da Barbearia Bigod's" width="70">
-                <h2 class="localizacao-titulo">Barbearia Bigod's</h2>
-            </div>
-
-            <div class="localizacao-grid">
-
-                <div class="horarios">
-                    <h3 class="horarios-titulo">Horário de atendimento</h3>
-
-                    <ul class="horarios-lista">
-                        <li class="horarios-item">
-                            <span class="horarios-dia">Segunda</span>
-                            <span class="horarios-turnos">
-                                <span>Manhã 09:00 - 12:00</span>
-                                <span>Tarde 13:30 - 20:30</span>
-                            </span>
-                        </li>
-                        <li class="horarios-item">
-                            <span class="horarios-dia">Terça</span>
-                            <span class="horarios-turnos">
-                                <span>Manhã 09:00 - 12:00</span>
-                                <span>Tarde 13:30 - 20:30</span>
-                            </span>
-                        </li>
-                        <li class="horarios-item">
-                            <span class="horarios-dia">Quarta</span>
-                            <span class="horarios-turnos">
-                                <span>Manhã 09:00 - 12:00</span>
-                                <span>Tarde 13:30 - 20:30</span>
-                            </span>
-                        </li>
-                        <li class="horarios-item">
-                            <span class="horarios-dia">Quinta</span>
-                            <span class="horarios-turnos">
-                                <span>Manhã 09:00 - 12:00</span>
-                                <span>Tarde 13:30 - 20:30</span>
-                            </span>
-                        </li>
-                        <li class="horarios-item">
-                            <span class="horarios-dia">Sexta</span>
-                            <span class="horarios-turnos">
-                                <span>Manhã 09:00 - 12:00</span>
-                                <span>Tarde 13:30 - 20:30</span>
-                            </span>
-                        </li>
-                        <li class="horarios-item">
-                            <span class="horarios-dia">Sábado</span>
-                            <span class="horarios-turnos">
-                                <span>Manhã 09:00 - 12:00</span>
-                                <span>Tarde 13:30 - 19:00</span>
-                            </span>
-                        </li>
-                        <li class="horarios-item">
-                            <span class="horarios-dia">Domingo</span>
-                            <span class="horarios-fechado">Fechado</span>
-                        </li>
-                    </ul>
+                <div class="links-col-1">
+                    <p><strong>Descubra</strong></p>
+                    <p>Nossa História</p>
+                    <p>Rituais Clássicos</p>
+                    <p>O Atelier</p>
+                    <p>Produtos Premium</p>
+                    <p>Agendar Cadeira</p>
                 </div>
-
-                <address class="localizacao-endereco">
-                    <p>R. Mato Grosso, 265</p>
-                    <p>Parque dos Estados</p>
-                    <p>Santa Terezinha de Itaipu - PR</p>
-                    <p>85875-000</p>
-                </address>
-
-                <iframe class="localizacao-mapa" title="Mapa com a localização da Barbearia Bigod's"
-                    src="https://www.google.com/maps?q=R.+Mato+Grosso,+265,+Parque+dos+Estados,+Santa+Terezinha+de+Itaipu+-+PR,+85875-000&output=embed"
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-
-            </div>
-        </section>
-
-        <footer id="footer" class="rodape">
-            <div class="rodape-conteudo">
-
-                <div class="rodape-info">
-                    <p class="rodape-copy">© 2026 Barbearia Bigod’s. Todos os direitos reservados.</p>
-
-                    <div class="rodape-redes">
-                        <a href="#" class="bi bi-instagram">Instagram</a>
-                        <a href="https://wa.me/5545999306611" class="bi bi-whatsapp" target="_blank"
-                            rel="noopener">Whatsapp</a>
+                <div class="links-col-2">
+                    <p><strong>Equipe</strong></p>
+                    <p>Mestres Barbeiros</p>
+                    <p>Linhagem e Ofício</p>
+                    <p>Junte-se à Equipe</p>
+                    <p>Eventos Privados</p>
+                </div>
+                <div class="links-col-3">
+                    <p><strong>Informativo Bigod's</strong></p>
+                    <p>Inscreva-se para dicas de cuidados, novidades de estilo e acesso antecipado às reservas.</p>
+                    <div class="input">
+                        <input type="text"> email@exemplo.com
                     </div>
                 </div>
-
-                <nav class="rodape-menu" aria-label="Menu do rodapé">
-                    <p class="rodape-menu-titulo"><a href="#topo">Menu</a></p>
-                    <ul>
-                        <li><a href="#sec6">Profissionais</a></li>
-                        <li><a href="#sec2">Serviços</a></li>
-                        <li><a href="#">Produtos</a></li>
-                    </ul>
-                </nav>
-
-            </div>
-        </footer>
-
-    </div>
-
-    <script src="script.js" defer></script>
+                <hr class="linha-divider">
+                <div class="linha-final">
+                    <p>© 2026 Barbearia Bigod’s Inc. Todos os direitos reservados.</p>
+                    <div class="redes-sociais">
+                        <p>Instagram</p>
+                        <p>Facebook</p>
+                        <p>Whatsapp</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </footer>
 </body>
 
 </html>
