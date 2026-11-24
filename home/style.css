@@ -437,87 +437,51 @@ hr.linha-divider {
 
 #sec3 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.4fr;
+    align-items: center;
     gap: 48px;
     max-width: 1200px;
-    margin: 0; 
+    margin: 0;
     padding: 80px 24px;
 }
 
 #sec3 .sec3-label {
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 0.1em;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
-
-#sec3 .sec3-label span {
-    margin-right: 12px;
-}
-
 
 #sec3 .sec3-titulo {
-    margin-bottom: 24px;
+    margin-bottom: 40px;
 }
 
 #sec3 .sec3-titulo span {
-    display: block;
     color: var(--cor-texto-secundario);
     font-weight: 300;
 }
 
-#sec3 .sec3-texto > p:not(.sec3-label) {
+#sec3 .sec3-descricao {
     line-height: 1.7;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 
-#sec3 .sec3-numeros {
-    display: flex;
-    gap: 40px;
-    margin-top: 32px;
+#sec3 .sec3-destaque {
+    font-size: 12px;
 }
-
-#sec3 .sec3-numero {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-#sec3 .sec3-numero strong {
-    font-family: var(--fonte-principal);
-    font-size: 24px;
-    color: var(--cor-texto-primario);
-}
-
-#sec3 .sec3-numero span {
-    font-family: var(--fonte-secundaria);
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    color: var(--cor-texto-secundario);
-}
-
 
 #sec3 .sec3-imagens {
     display: flex;
     gap: 16px;
 }
 
-#sec3 .sec3-foto {
+#sec3 .sec3-imagens img {
     flex: 1;
+    min-width: 0;
     height: 420px;
-    border-radius: 8px;
-    background-color: #E4E6E9;
-    border: 1px dashed var(--cor-texto-secundario);
-    overflow: hidden;
-}
-
-
-#sec3 .sec3-foto img {
-    display: block;
-    width: 100%;
-    height: 100%;
     object-fit: cover;
+    border: 1px solid #D7DBDE;
+    border-radius: 8px;
 }
-
 
 @media (max-width: 800px) {
     #sec3 {
@@ -525,7 +489,7 @@ hr.linha-divider {
         padding: 48px 20px;
     }
 
-    #sec3 .sec3-foto {
+    #sec3 .sec3-imagens img {
         height: 240px;
     }
 }
@@ -653,7 +617,6 @@ body {
     border-radius: 2px;
 }
 
-/* background de fundo com efeito parallax */
 .background-parallax {
     background-image: url('../assets/bassets7.jpg');
     background-attachment: fixed;
@@ -705,7 +668,6 @@ body {
 }
 
 
-/* seção 7 – "Nossos produtos" */
 #sec7 {
     background-color: var(--cor-secundaria);
     padding: 80px 24px;
@@ -726,7 +688,6 @@ body {
     font-weight: 300;
 }
 
-/* os cards ficam em grade: 3 por linha no computador, menos em telas menores */
 #sec7 .sec7-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -739,7 +700,7 @@ body {
     flex-direction: column;
     gap: 12px;
     padding: 12px;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
     border: 1px solid #C9C4B8;
     border-radius: 8px;
 }
@@ -795,7 +756,6 @@ body {
     cursor: pointer;
 }
 
-/* tablet: 2 cards por linha */
 @media (max-width: 900px) {
     #sec7 .sec7-cards {
         grid-template-columns: repeat(2, 1fr);
